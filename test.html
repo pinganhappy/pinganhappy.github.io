@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- Bootstrap -->
+    <link
+            href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/css/course_detail_resp.css"/>
+    <!-- 播放器默认样式 -->
+    <link rel="stylesheet" href="/css/video-js.6.0.css"/>
+    <!-- 自定义播放器样式 -->
+    <link rel="stylesheet" href="/css/custom_video.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <title>问道学院</title>
+    <style>
+        .left{
+
+            background-color: black;
+        }
+        .right{
+            padding-left: 20px;
+        }
+
+        .btn{
+            display: block;
+        }
+        .right h3{
+            margin: 25px 0;
+        }
+        .right p{
+            font-size: 17px;
+        }
+        .right button{
+            width:100%;
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default ">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">问道学院</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">首页</a></li>
+                <li><a href="/">课程</a></li>
+                <li><a href="#">博客</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="form-group">
+                            <input placeholder="请输入关键字" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-success">搜索</button>
+                    </div>
+                </div>
+            </form>
+            <div class="navbar-form navbar-right">
+                <div class="btn-group" role="group" aria-label="...">
+                    <a class="btn btn-success" href="/preRegister.html">注册</a>
+                    <a class="btn btn-danger" href="/login.html">登陆</a>
+                    <a class="btn btn-success radius juanzeng" target="_blank" href="/juanzeng.shtml">捐赠</a>
+                    <img id="payImage" style="width: 140px;height: 140px;position: absolute;right: 1px;top: 100%;display: none;" src="/images/pay.png">
+                    <script>
+                        $(function(){
+                            $(".juanzeng").hover(function(){
+                                $("#payImage").show();
+                            },function(){
+                                $("#payImage").hide();
+                            });
+
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">前端技术</a></li>
+        <li class="active">响应式布局</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-8 left ">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="http://1253465307.vod2.myqcloud.com/e252b26bvodtransgzp1253465307/90e6d02d9031868222926129549/f0.f30.mp4"></iframe>
+            </div>
+        </div>
+        <div class="col-md-4 right">
+            <div class="hidden-xs">
+                <h3>Bootstrap系列教程</h3>
+                <p class="text-muted">完全免费，尽情观赏</p>
+                <p class="text-muted">难度：基础</p>
+                <p class="text-muted">课时： </p>
+                <p class="text-muted">学习人数：0</p>
+                <p class="text-muted">课程讲师：朱锡铭</p>
+            </div>
+            <button class="btn btn-success btn-lg">点击关注，更新通知</button>
+            <button class="btn btn-danger btn-lg">提问</button>
+        </div>
+    </div>
+</div>
+<script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+    <!--第一行结束-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
